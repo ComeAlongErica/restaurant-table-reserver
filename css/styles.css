@@ -18,7 +18,8 @@ body {
 }
 
 .container {
-    width: 350px;
+    max-width: 379px;
+    min-width: 305px;
     position: absolute;
     left: 50%;
     top: 12%;
@@ -31,21 +32,22 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     background-color: white;
-    padding: 20px;
+    padding: 20px 40px;
     border-radius: 5px;
 }
 
 .table, .available {
-    width: 80px;
-    height: 80px;
+    width: 75px;
+    height: 75px;
     border-radius: 100px;
-    margin: 5px;
+    margin: 5px 0;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #CCC;
     color: #ADAAAA;
     cursor: pointer;
+    position: relative;
 }
 
 .reserved {
@@ -57,7 +59,7 @@ body {
 /* form styling */
 
 #form-container {
-    padding: 20px;
+    padding: 20px 50px;
     background-color: white;
     border-radius: 5px;
     position: fixed;
@@ -73,15 +75,15 @@ form {
 }
 
 input {
-    padding: 10px 40px;
+    padding: 20px;
     margin: 10px;
-    width: 300px;
+    width: 150px;
     border: none;
     border-bottom: 1px solid #CCC;
 }
 
 button {
-    padding: 10px;
+    padding: 15px;
     border: none;
     background-color: #008000;
     width: 95%;
@@ -103,16 +105,48 @@ button {
     cursor: pointer;
 }
 
+.tooltip {
+    background-color: darkgrey;
+    border: 1px solid rgb(49, 49, 49);
+    color: rgb(49, 49, 49);
+    position: absolute;
+    bottom: -20px;
+    z-index: 100;
+    padding-left: 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    min-width: 125px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+.table-info {
+    line-height: 6px;
+}
 
 /* slightly bigger on desktop */
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 519px) {
     .container {
-        width: 400px;
-    }
+        max-width: 500px;
+        min-width: 425px;
+        }
 
     .table {
         width: 100px;
         height: 100px;
+        margin: 5px;
     }
+
+    input {
+        padding: 10px 40px;
+        width: 300px;
+    }
+
+    button {
+        padding: 10px;
+    }
+
 }
