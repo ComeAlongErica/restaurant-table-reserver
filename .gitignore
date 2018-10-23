@@ -1,0 +1,4 @@
+# add files and folders you want to be ignored
+.DS_Store
+node_modules
+.env
