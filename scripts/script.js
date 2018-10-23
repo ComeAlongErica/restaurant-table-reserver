@@ -45,5 +45,4 @@ $(document).ready(() => {
             $(".table-id-num").remove(); // resets the table shown on form
     };
 
-    
 });
