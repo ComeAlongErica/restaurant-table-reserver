@@ -1,7 +1,6 @@
 "use strict";
 $(document).ready(() => {
-    // hides container on start up
-    $("#form-container").hide(); 
+    let table;
 
     //sets up tables before anything else
     function setupTables() {
@@ -13,7 +12,7 @@ $(document).ready(() => {
 
     //event listener for table, show form, publish table
     $(".available").on("click", (event) => {
-        let table = event.target;
+        table = event.target;
         $("#form-container").show("slow"); // shows form
         $(".table-num").append(`<span class="table-id-num"> ${event.target.id}</span>`); // displays table number
         $(".clear").on("click", (event) => {
@@ -44,7 +43,6 @@ $(document).ready(() => {
                             .unbind("mouseover")
                             .unbind("click");;
             $(".table-id-num").remove(); // resets the table shown on form
-
     };
 
 });
