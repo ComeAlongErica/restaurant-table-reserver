@@ -20,4 +20,10 @@ is changed from “available” to “reserved”.
 well as changes the cursor.
 
 ![Table Reserver](images/table-on-hover.png)
-Format: ![Screenshot with hover effect for selecting table](url)
+Format: ![Screenshot with hover effect for selecting table](images/table-on-hover.png)
+
+![Table Reserver](images/reserve-form.png)
+Format: ![Reservation form](images/reserve-form.png)
+
+![Table Reserver](images/tool-tip-reserved.png)
+Format: ![Tooltip for reservation on hover](images/tool-tip-reserved.png)
